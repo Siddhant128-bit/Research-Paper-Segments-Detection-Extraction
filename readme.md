@@ -14,6 +14,7 @@ We are also going to compare all the existing methods and check which ones perfo
 
 <h2 align='left'> 1. Paddle OCR </h2>
 &nbsp;&nbsp;&nbsp; Initially we start with Paddle OCR and check how it performs for extraction of various components.<br><br>
+Paddle OCR uses <b> Efficient and Accurate Scene Text detection (EAST)<b><br><br>
 Repo to Padddle OCR: <a href='https://github.com/PaddlePaddle/PaddleOCR'> Paddle </a>
 <br><br>
 A Brief concept of Paddle can be gained from the image below: 
