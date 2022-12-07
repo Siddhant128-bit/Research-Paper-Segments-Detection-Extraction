@@ -35,7 +35,11 @@ Here are some of the results we have obtained from Paddle COR:<br><br>
         <td><img src=Results/original_table_text_title.png width="450" /></td>
         <td><img src=Results/paddle_table_text_title.png  width="450" /> </td>
     </tr>
-    
+    <tr>
+        <td><img src=Results/original_table_references.png width="450" /></td>
+        <td><img src=Results/paddle_table_references.png  width="450" /> </td>
+    </tr>
+        
 </table>
 
 
