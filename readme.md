@@ -14,6 +14,20 @@ We are also going to compare all the existing methods and check which ones perfo
 
 <h2 align='left'> 1. Paddle OCR </h2>
 &nbsp;&nbsp;&nbsp; Initially we start with Paddle OCR and check how it performs for extraction of various components.<br><br>
+Paddle OCR uses <b> Efficient and Accurate Scene Text detection (EAST)<b><br><br>
+<h3> <b> Efficient and Accurate Scene Text detection (EAST): </b></h3><br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Efficient and Accurate Scene Text Detection (EAST) is an algorithm for detecting text in natural scenes with high efficiency and accuracy. It was proposed by Xinyu Zhou, Cong Yao, He Wen, Yuzhi Wang, and Shuchang Zhou in their paper titled "EAST: An Efficient and Accurate Scene Text Detector". EAST uses a fully convolutional neural network (FCN) for text detection, which makes it faster than traditional methods that use region proposal algorithms.
+<br>
+EAST works by first converting an input image to a feature map using a VGG16 network, which is a convolutional neural network pre-trained on the ImageNet dataset. The feature map is then fed to the Region Proposal Network (RPN) to generate region proposals. In EAST, the RPN is replaced with a feature fusion module that generates feature maps at different scales. These feature maps are then used to generate region proposals using a sliding window approach.
+<br>
+The next step in EAST is to use the region proposals to generate score maps and geometry maps. The score map is used to indicate the probability of each pixel belonging to a text region, while the geometry map is used to predict the location and orientation of the bounding box for each text region.
+<br>
+Finally, the score and geometry maps are used to extract the text boxes using non-maximum suppression (NMS). NMS is used to eliminate redundant detections and to select the best text boxes based on their confidence scores.
+<br>
+EAST is known for its high accuracy and efficiency, and it has been widely used in various applications such as document recognition, license plate recognition, and scene text recognition.
+<br>
+In summary, EAST is an algorithm for detecting text in natural scenes that uses a fully convolutional neural network and a feature fusion module to generate region proposals. It then uses score and geometry maps to extract text boxes using non-maximum suppression.</p>
+<br>
 Repo to Padddle OCR: <a href='https://github.com/PaddlePaddle/PaddleOCR'> Paddle </a>
 <br><br>
 A Brief concept of Paddle can be gained from the image below: 
